@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Brain Power - Cognitive Test Suite</title>
+<meta name="description" content="Learn about Brain Power's cognitive tests: reaction speed, color perception, sequence memory, and number memory. Scientific methodology explained.">
+<meta name="theme-color" content="#08081a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#08081a;font-family:'Space Grotesk',system-ui,sans-serif;color:#c8c8e0;line-height:1.7;min-height:100vh}
+.wrap{max-width:640px;margin:0 auto;padding:24px 20px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid #1e1e40}
+.nav a{color:#7c6cf0;text-decoration:none;font-weight:600;font-size:15px}
+.nav a:hover{color:#a99cf8}
+.lang-btn{background:#101028;border:1px solid #1e1e40;color:#55557a;padding:3px 10px;border-radius:6px;cursor:pointer;font-size:11px;font-family:inherit}
+h1{font-size:24px;font-weight:700;color:#e8e8f8;margin-bottom:8px}
+.tagline{font-size:14px;color:#7c6cf0;margin-bottom:28px}
+h2{font-size:17px;font-weight:600;color:#e8e8f8;margin:28px 0 10px}
+h3{font-size:15px;font-weight:600;color:#c8c8e0;margin:18px 0 6px}
+p{margin-bottom:14px;font-size:14px;color:#a0a0c0}
+.game-card{background:#101028;border:1px solid #1e1e40;border-radius:14px;padding:18px;margin-bottom:14px}
+.game-card h3{margin-top:0}
+.icon{font-size:24px;margin-bottom:6px}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:4px;background:#7c6cf015;color:#7c6cf0;margin-right:6px;margin-bottom:4px}
+.scale-table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:13px}
+.scale-table th{text-align:left;padding:8px 10px;border-bottom:1px solid #1e1e40;color:#e8e8f8;font-weight:600}
+.scale-table td{padding:6px 10px;border-bottom:1px solid #1e1e4040}
+.scale-table .highlight{color:#00e5ff;font-weight:600}
+.cta{text-align:center;margin:32px 0}
+.cta a{display:inline-block;background:linear-gradient(135deg,#7c6cf0,#8b7cf0);color:#fff;padding:14px 36px;border-radius:12px;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 4px 16px rgba(124,108,240,.25);transition:.15s}
+.cta a:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid #1e1e40;text-align:center;font-size:12px;color:#55557a}
+.footer a{color:#55557a;margin:0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav">
+<a href="index.html">← 🧠 Brain Power</a>
+<button class="lang-btn" onclick="toggleLang()" id="langBtn">日本語</button>
+</div>
+
+<div id="en">
+<h1>About Brain Power</h1>
+<p class="tagline">A free cognitive test suite measuring 4 key brain abilities</p>
+
+<h2>What is Brain Power?</h2>
+<p>Brain Power is a free web-based cognitive assessment tool that measures your mental abilities through four scientifically-inspired mini-games. Each game targets a different cognitive domain, and your results are combined into an overall Brain Score on a 1-25 scale.</p>
+<p>Our tests are inspired by established cognitive assessment methodologies used in psychology research, including reaction time measurement, working memory span tasks, and visual discrimination tests.</p>
+
+<h2>The Four Tests</h2>
+
+<div class="game-card">
+<div class="icon">⚡</div>
+<h3>Reaction Speed</h3>
+<span class="tag">Processing Speed</span><span class="tag">Motor Response</span>
+<p>Measures how quickly you can respond to a visual stimulus. You complete 5 rounds, and your average reaction time is calculated. The average human reaction time to visual stimuli is approximately 250-270ms.</p>
+</div>
+
+<div class="game-card">
+<div class="icon">🎨</div>
+<h3>Color Perception</h3>
+<span class="tag">Visual Discrimination</span><span class="tag">Attention</span>
+<p>Tests your ability to distinguish subtle color differences. A grid of tiles is shown with one tile slightly different from the rest. Difficulty increases progressively — early levels shift hue (easiest), mid levels combine hue and brightness, and advanced levels test brightness and saturation only (hardest).</p>
+</div>
+
+<div class="game-card">
+<div class="icon">💡</div>
+<h3>Sequence Memory</h3>
+<span class="tag">Working Memory</span><span class="tag">Sequential Processing</span>
+<p>Based on the classic Simon game paradigm, this test measures your working memory capacity. A sequence of colored lights plays, and you must repeat it in order. The sequence grows longer each round, and playback speed increases with level — testing both memory span and processing speed.</p>
+</div>
+
+<div class="game-card">
+<div class="icon">🔢</div>
+<h3>Number Memory</h3>
+<span class="tag">Short-term Memory</span><span class="tag">Digit Span</span>
+<p>Inspired by the digit span test used in clinical neuropsychology (part of the Wechsler Adult Intelligence Scale). A number is displayed briefly, then you must recall it. Starting at 3 digits, each successful round adds one more digit. Average adults can remember 7±2 digits.</p>
+</div>
+
+<h2>Scoring System</h2>
+<p>Each test produces an ability score on a 1-25 scale:</p>
+<table class="scale-table">
+<tr><th>Score</th><th>Level</th><th>Description</th></tr>
+<tr><td>1-5</td><td>Beginner</td><td>Below average performance</td></tr>
+<tr><td>6-10</td><td>Average</td><td>Typical adult performance</td></tr>
+<tr><td>11-15</td><td>Above Average</td><td>Strong cognitive performance</td></tr>
+<tr><td>16-19</td><td>Exceptional</td><td>Top 5% of tested population</td></tr>
+<tr class="highlight"><td>20-22</td><td>World Class</td><td>Highest recorded human performance levels</td></tr>
+<tr><td>23-25</td><td>Extraordinary</td><td>Theoretical maximum / anomaly detection</td></tr>
+</table>
+<p>Your overall Brain Score is the average of all completed tests. A Deviation Score (similar to IQ standard scoring) is also calculated, centered at 50 with a standard deviation of 10.</p>
+
+<h2>How It Works</h2>
+<p>All data is processed and stored locally in your browser. No personal information is collected or transmitted to any server. Your scores are saved using localStorage, so they persist between sessions on the same device.</p>
+<p>The adaptive difficulty system adjusts each test based on your performance, ensuring you're always challenged at an appropriate level.</p>
+
+<h2>Disclaimer</h2>
+<p>Brain Power is an entertainment and self-improvement tool. While our tests are inspired by established cognitive science methodologies, results should not be interpreted as clinical diagnoses or official IQ scores. For professional cognitive assessment, please consult a licensed psychologist.</p>
+
+<div class="cta"><a href="index.html">Start Testing Your Brain →</a></div>
+</div>
+
+<div id="ja" style="display:none">
+<h1>Brain Powerについて</h1>
+<p class="tagline">4つの認知能力を測定する無料テストスイート</p>
+
+<h2>Brain Powerとは？</h2>
+<p>Brain Powerは、4つの科学的ミニゲームを通じて認知能力を測定する、無料のWebベース認知テストツールです。各ゲームは異なる認知領域をターゲットとし、結果は1-25スケールの総合脳力スコアに統合されます。</p>
+<p>テストは、心理学研究で使用される確立された認知評価手法（反応時間測定、作業記憶スパン課題、視覚弁別テスト等）に着想を得ています。</p>
+
+<h2>4つのテスト</h2>
+
+<div class="game-card">
+<div class="icon">⚡</div>
+<h3>反応速度</h3>
+<span class="tag">処理速度</span><span class="tag">運動反応</span>
+<p>視覚刺激に対する反応速度を測定します。5ラウンドを完了し、平均反応時間を算出。人間の視覚刺激に対する平均反応時間は約250-270ミリ秒です。</p>
+</div>
+
+<div class="game-card">
+<div class="icon">🎨</div>
+<h3>色彩感覚</h3>
+<span class="tag">視覚弁別</span><span class="tag">注意力</span>
+<p>微妙な色の違いを識別する能力をテスト。タイルのグリッドの中から、わずかに異なる1つを見つけます。難易度は段階的に上昇 — 序盤は色相シフト（最も判別しやすい）、中盤は色相+明度の複合、上級は明度と彩度のみ（最難関）。</p>
+</div>
+
+<div class="game-card">
+<div class="icon">💡</div>
+<h3>記憶シーケンス</h3>
+<span class="tag">作業記憶</span><span class="tag">順序処理</span>
+<p>クラシックなSimonゲームのパラダイムに基づき、作業記憶容量を測定。色付きライトのシーケンスが再生され、同じ順序で再現します。ラウンドごとにシーケンスが長くなり、レベルに応じて再生速度も上昇。</p>
+</div>
+
+<div class="game-card">
+<div class="icon">🔢</div>
+<h3>数字記憶</h3>
+<span class="tag">短期記憶</span><span class="tag">数字スパン</span>
+<p>臨床神経心理学で使用されるデジットスパンテスト（ウェクスラー成人知能検査の一部）に着想。数字が短時間表示され、記憶して入力します。3桁からスタートし、正解ごとに1桁増加。平均的な成人は7±2桁を記憶できます。</p>
+</div>
+
+<h2>スコアリングシステム</h2>
+<p>各テストは1-25スケールの能力スコアを生成します：</p>
+<table class="scale-table">
+<tr><th>スコア</th><th>レベル</th><th>説明</th></tr>
+<tr><td>1-5</td><td>初級</td><td>平均以下のパフォーマンス</td></tr>
+<tr><td>6-10</td><td>平均</td><td>一般的な成人のパフォーマンス</td></tr>
+<tr><td>11-15</td><td>平均以上</td><td>優れた認知パフォーマンス</td></tr>
+<tr><td>16-19</td><td>優秀</td><td>テスト人口の上位5%</td></tr>
+<tr class="highlight"><td>20-22</td><td>世界クラス</td><td>これまでに記録された人類最高レベル</td></tr>
+<tr><td>23-25</td><td>超越</td><td>理論上の最大値 / 異常検出域</td></tr>
+</table>
+<p>総合脳力スコアは全テストの平均値。偏差値（IQ標準スコアに類似）も算出され、平均50、標準偏差10を基準とします。</p>
+
+<h2>仕組み</h2>
+<p>すべてのデータはお使いのブラウザ内でローカルに処理・保存されます。個人情報がサーバーに送信されることはありません。スコアはlocalStorageに保存され、同じデバイスでのセッション間で持続します。</p>
+<p>適応型難易度システムがパフォーマンスに応じて各テストを調整し、常に適切なレベルで挑戦できるようにしています。</p>
+
+<h2>免責事項</h2>
+<p>Brain Powerはエンターテインメントおよび自己改善ツールです。テストは確立された認知科学の方法論に着想を得ていますが、結果を臨床診断や公式IQスコアとして解釈すべきではありません。専門的な認知評価については、資格を持つ心理士にご相談ください。</p>
+
+<div class="cta"><a href="index.html">脳力テストを始める →</a></div>
+</div>
+
+<div class="footer">
+© 2026 Brain Power. All rights reserved.
+<br><a href="privacy.html">Privacy Policy</a>
+</div>
+</div>
+<script>
+var lang="en";
+function toggleLang(){
+  lang=lang==="en"?"ja":"en";
+  document.getElementById("en").style.display=lang==="en"?"block":"none";
+  document.getElementById("ja").style.display=lang==="ja"?"block":"none";
+  document.getElementById("langBtn").textContent=lang==="en"?"日本語":"English";
+}
+</script>
+</body>
+</html>
